@@ -53,12 +53,6 @@ void MainGameWindow::startGame() {
         // 重载eventfilter安装到当前window（其实如果不适用ui文件的话直接可以在window的paintevent里面画）
         ui->centralWidget->installEventFilter(this);
 
-    //    setFixedSize(kLeftMargin * 2 + (kIconMargin + kIconSize) * MAX_COL, kTopMargin + (kIconMargin + kIconSize) * MAX_ROW);
-        // 选关信号槽
-        connect(ui->actionBasic, SIGNAL(triggered(bool)), this, SLOT(createGameWithLevel()));
-        connect(ui->actionMedium, SIGNAL(triggered(bool)), this, SLOT(createGameWithLevel()));
-        connect(ui->actionHard, SIGNAL(triggered(bool)), this, SLOT(createGameWithLevel()));
-
         // 初始化游戏
         initGame(BASIC);
     } else {

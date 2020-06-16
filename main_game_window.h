@@ -58,7 +58,7 @@ private slots:
     void onIconButtonPressed(); // icon点击到响应
     void gameTimerEvent(); // 游戏计时回调
     void handleLinkEffect(); // 实现连接效果
-    void on_robot_btn_clicked(); // 机器人自动刷
+    //void on_robot_btn_clicked(); // 机器人自动刷
     void createGameWithLevel(GameLevel level); // 选中难度开始
 
     void on_btn_start_clicked();
