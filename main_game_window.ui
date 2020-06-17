@@ -18,71 +18,14 @@
     <normaloff>res/image/2.png</normaloff>res/image/2.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/res/image/bg.jpg);</string>
+   <string notr="true">border-color: rgb(38, 139, 210);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QProgressBar" name="timeBar">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>0</y>
-      <width>681</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>WaitCursor</cursorShape>
-    </property>
-    <property name="mouseTracking">
-     <bool>false</bool>
-    </property>
-    <property name="value">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>11</x>
-      <y>11</y>
-      <width>39</width>
-      <height>19</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>时间：</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btn_start">
     <property name="geometry">
      <rect>
-      <x>940</x>
-      <y>0</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Ubuntu&quot;;</string>
-    </property>
-    <property name="text">
-     <string>开始</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_pause">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>0</y>
+      <x>850</x>
+      <y>30</y>
       <width>131</width>
       <height>41</height>
      </rect>
@@ -98,7 +41,33 @@
     </property>
     <property name="styleSheet">
      <string notr="true">font: 20pt &quot;Ubuntu&quot;;
-alternate-background-color: rgb(251, 255, 156);</string>
+background-color: rgb(239, 41, 41);</string>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pause">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>30</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Ubuntu&quot;;
+background-color: rgb(220, 50, 47);</string>
     </property>
     <property name="text">
      <string>暂停</string>
@@ -107,8 +76,8 @@ alternate-background-color: rgb(251, 255, 156);</string>
    <widget class="QWidget" name="stage" native="true">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>70</y>
+      <x>200</x>
+      <y>90</y>
       <width>1200</width>
       <height>900</height>
      </rect>
@@ -119,23 +88,23 @@ alternate-background-color: rgb(251, 255, 156);</string>
       <bold>false</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">
-background-image: url(:/res/image/背景.jpg);</string>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_score">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>940</y>
-      <width>101</width>
-      <height>41</height>
+      <x>1620</x>
+      <y>170</y>
+      <width>121</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>DejaVu Sans</family>
+      <pointsize>34</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -147,29 +116,109 @@ background-image: url(:/res/image/背景.jpg);</string>
      <number>1</number>
     </property>
     <property name="text">
-     <string>积分：</string>
+     <string>积分</string>
     </property>
    </widget>
    <widget class="QLCDNumber" name="lcdScore">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>940</y>
-      <width>111</width>
-      <height>41</height>
+      <x>1620</x>
+      <y>270</y>
+      <width>151</width>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
     </property>
     <property name="digitCount">
      <number>10</number>
     </property>
    </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>1</y>
+      <width>1891</width>
+      <height>1201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/image/bg.jpg);</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="timeBar">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>250</y>
+      <width>71</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>WaitCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::TopToBottom</enum>
+    </property>
+    <property name="format">
+     <string>%p%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_score_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>140</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>34</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(254, 255, 137)qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69))</string>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>时间</string>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
    <zorder>btn_start</zorder>
-   <zorder>timeBar</zorder>
-   <zorder>label</zorder>
-   <zorder>stage</zorder>
    <zorder>btn_pause</zorder>
    <zorder>label_score</zorder>
    <zorder>lcdScore</zorder>
+   <zorder>timeBar</zorder>
+   <zorder>label_score_2</zorder>
+   <zorder>stage</zorder>
   </widget>
   <action name="actionBasic">
    <property name="text">

@@ -24,6 +24,5 @@
         <file>res/sound/release.wav</file>
         <file>res/sound/select.wav</file>
         <file>res/image/bg.jpg</file>
-        <file>res/image/bgs.png</file>
     </qresource>
 </RCC>
