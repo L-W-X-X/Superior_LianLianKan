@@ -3,7 +3,7 @@
 </br>
 
 ## Intro
-![avatar](img/itr.png)
+![img](https://github.com/L-W-X-X/Superior_LianLianKan/blob/master/img/itr.png)
 
 </br>
 
